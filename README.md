@@ -15,7 +15,7 @@ Don\'t forget to delete temporary table (*Const StTable*) manually.
 ## Prerequisites
 Tested with MS Access 2010 and .mdb file.
 
-It will work **only** with mdb file. With Access 2007+ file (.accdb) you will get an error 3838.
+If you have table with multivalued field you will get error 3838.
 
 
 ## \*\*\*
