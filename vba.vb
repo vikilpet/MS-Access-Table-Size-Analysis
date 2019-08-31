@@ -26,7 +26,7 @@ Sub CheckTableSize()
     
     For Each T In DB.TableDefs
         ' Exclude system tables:
-        If Not T.Name Like "MSys*" And T.Name <> StTable And T.Name <> "motiv" Then
+        If Not T.Name Like "MSys*" And T.Name <> StTable Then
             RecCnt = T.RecordCount
             ' If it's linked table:
             If RecCnt = -1 Then RecCnt = DCount("*", T.Name)
